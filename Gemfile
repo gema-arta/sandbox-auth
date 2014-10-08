@@ -46,3 +46,6 @@ gem 'devise', '~> 3.3.0'
 gem 'omniauth', '~> 1.2.2'
 gem 'omniauth-facebook', '~> 2.0.0'
 gem 'omniauth-google-oauth2', '~> 0.2.5'
+
+# Hide passwords from terminal when using capistrano
+gem 'highline', '~> 1.6.21'
