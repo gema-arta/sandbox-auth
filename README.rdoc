@@ -1,4 +1,4 @@
-== README
+== SANDBOX AUTH
 
 The sandbox application uses a federated identity (via omniauth) via Facebook, Google to log in. The application uses devise to guard a protected page.
 
