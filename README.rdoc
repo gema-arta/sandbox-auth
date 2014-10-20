@@ -1,28 +1,19 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The sandbox application uses a federated identity (via omniauth) via Facebook, Google to log in. The application uses devise to guard a protected page.
 
-Things you may want to cover:
+The application stack:
 
-* Ruby version
+* Ruby 2.1.3
+* Rails 4.1.5,
+* MySQL
+* Passenger
+* NGINX
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+The site is deployed via Capistrano.
 
 * Deployment instructions
 
-* ...
+To deploy, populate the secrets.yml file from secrets.yml.example.
+<tt>cap production deploy</tt>. Initialize the secrets file server-side and re-deploy.
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
